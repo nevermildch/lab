@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab03</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+        
+        .row.content {
+            height: 1500px
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-color: deepskyblue;
+            color: white;
+            padding: 15px;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4>58160175's Blog Bootstrap [ENG]</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="lab03.html">Home</a></li>
+                    <li class="active"><a href="grid.html">Grid in Bootstrap</a></li>
+                    <li><a href="#section3">How to Use Form</FROM></a></li>
+
+                </ul><br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog..">
+                    <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-sm-9">
+
+                <hr>
+                <h2>Bootstrap Grids</h2>
+                <h5><span class="glyphicon glyphicon-time"></span> Post by Thitivut, Feb, 10 , 2017.</h5>
+                <h5><span class="label label-danger">Detail from W3School</span> <span class="label label-primary">Head</span></h5><br>
+                <p>
+                    <h2>Bootstrap Grid System</h2> Bootstrap includes a powerful mobile-first flexbox grid system for building layouts of all shapes and sizes. It’s based on a 12 column layout and has multiple tiers, one for each media query range. You can
+                    use it with Sass mixins or our predefined classes.</p>
+                <br><br>
+
+                <h4><small>RECENT POSTS</small></h4>
+                <hr>
+                <h2>Grid Classes</h2>
+                <h5><span class="glyphicon glyphicon-time"></span>Post by Thitivut, Feb, 10 , 2017.</h5>
+                <h5><span class="label label-success">Detail from W3School</span></h5><br>
+                <p>The Bootstrap grid system has four classes:</p>
+                <p>-xs (for phones)</p>
+                <p>-sm (for tablets)</p>
+                <p> -md (for desktops)</p>
+                <p> -lg (for larger desktops)</p>
+                <p> The classes above can be combined to create more dynamic and flexible layouts.</p>
+                <hr>
+
+                <h4><small>RECENT POSTS</small></h4>
+                <hr>
+                <h2>Basic Structure of a Bootstrap Grid</h2>
+                <h5><span class="glyphicon glyphicon-time"></span>Post by Thitivut, Feb, 10 , 2017.</h5>
+                <h5><span class="label label-success">Detail from W3School</span></h5><br>
+                <p>The following is a basic structure of a Bootstrap grid:</p>
+
+                <div class="w3-example htmlHigh">
+                    <div class="w3-code notranslate">
+                        &lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&nbsp;
+                        &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;row&quot;&gt;<br>&nbsp; ...<br>&lt;/div&gt;</div>
+                </div>
+                <br>
+                <p>First; create a row (<code class="w3-codespan">&lt;div 
+class="row"&gt;</code>). Then, add the desired number of columns (tags with appropriate
+                    <code class="w3-codespan">.col-*-*</code> classes). Note that numbers in <code class="w3-codespan">.col-*-*</code> should always add up to 12 for each row.</p>
+                <p>Below we have collected some examples of basic Bootstrap grid layouts.</p>
+
+
+
+                <hr>
+
+                <h4><small>RECENT POSTS</small></h4>
+                <hr>
+                <h2>Three Equal Columns</h2>
+                <h5><span class="glyphicon glyphicon-time"></span>Post by Thitivut, Feb, 10 , 2017.</h5>
+                <h5><span class="label label-success">Detail from W3School</span></h5><br>
+                <p>
+                    <div class="container-fluid" style="margin:8px 0 15px 0;">
+                        <div class="row test">
+                            <div class="col-sm-4">.col-sm-4</div>
+                            <div class="col-sm-4">.col-sm-4</div>
+                            <div class="col-sm-4">.col-sm-4</div>
+                        </div>
+                    </div>
+                    <p>The following example shows how to get a three equal-width columns starting at tablets and scaling to large desktops. On mobile phones, the columns will automatically stack:</p>
+                    <div class="w3-example">
+                        <h3>Example</h3>
+                        <div class="w3-code notranslate htmlHigh">
+                            &lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt;<br>&lt;/div&gt;</div>
+
+                        <h2>Two Unequal Columns</h2>
+                        <div class="container-fluid" style="margin:8px 0 15px 0;">
+                            <div class="row test">
+                                <div class="col-sm-4">.col-sm-4</div>
+                                <div class="col-sm-8">.col-sm-8</div>
+                            </div>
+                        </div>
+                        <p>The following example shows how to get two various-width columns starting at tablets and scaling to large desktops:</p>
+                        <div class="w3-example">
+                            <h3>Example</h3>
+                            <div class="w3-code notranslate htmlHigh">
+                                &lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-sm-8&quot;&gt;.col-sm-8&lt;/div&gt;<br>&lt;/div&gt;</div>
+                        </div>
+                    </div>
+
+
+
+                    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        <p>Contact us Facebook : Thitivut Jiratrakulprom / 58160175</p>
+    </footer>
+
+</body>
+
+</html>
