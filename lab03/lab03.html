@@ -1,125 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Lab03</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-    .row.content {height: 1500px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: deepskyblue;
-      color: white;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height: auto;} 
-    }
-  </style>
+    <title>Lab03</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+        
+        .row.content {
+            height: 1500px
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-color: deepskyblue;
+            color: white;
+            padding: 15px;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav">
-      <h4>58160175's Blog BOOTSTRAP</h4>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="lab03.html">Home</a></li>
-        <li><a href="#section2">Grid in Bootstrap</a></li>
-        <li><a href="#section3">How to Use Form</FROM></a></li>
-        
-      </ul><br>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search Blog..">
-        <span class="input-group-btn">
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4>58160175's Blog BOOTSTRAP</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="lab03.html">Home</a></li>
+                    <li><a href="#section2">Grid in Bootstrap</a></li>
+                    <li><a href="#section3">How to Use Form</FROM></a></li>
+
+                </ul><br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog..">
+                    <span class="input-group-btn">
           <button class="btn btn-default" type="button">
             <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-      </div>
+                    </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-sm-9">
+                <h4><small>RECENT POSTS</small></h4>
+                <hr>
+                <h2>Bootstrap is?</h2>
+                <h5><span class="glyphicon glyphicon-time"></span> Post by Thitivut, Feb, 10 , 2017.</h5>
+                <h5><span class="label label-danger">Detail from WIKI</span> <span class="label label-primary">Head</span></h5><br>
+                <p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites Bootstrap is a free and open-source front-end web framework for designing websites and web applications. It contains HTML-
+                    and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. Unlike many web frameworks, it concerns itself with front-end development only.</p>
+                <br><br>
+
+                <h4><small>RECENT POSTS</small></h4>
+                <hr>
+                <h2>Origin</h2>
+                <h5><span class="glyphicon glyphicon-time"></span>Post by Thitivut, Feb, 10 , 2017.</h5>
+                <h5><span class="label label-success">Detail from WIKI</span></h5><br>
+                <p>Bootstrap is a framework, because it provides structure instead of simply being a library of predefined elements and styles.Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework
+                    to encourage consistency across internal tools. Before Bootstrap, various libraries were used for interface development, which led to inconsistencies and a high maintenance burden.</p>
+                <hr>
+
+                <h4><small>RECENT POSTS</small></h4>
+                <hr>
+                <h2>Features</h2>
+                <h5><span class="glyphicon glyphicon-time"></span>Post by Thitivut, Feb, 10 , 2017.</h5>
+                <h5><span class="label label-success">Detail from WIKI</span></h5><br>
+                <p>Bootstrap is compatible with the latest versions of the Google Chrome, Firefox, Internet Explorer, Opera, and Safari browsers, although some of these browsers are not supported on all platforms. Since version 2.0 it also supports responsive
+                    web design. This means the layout of web pages adjusts dynamically, taking into account the characteristics of the device used (desktop, tablet, mobile phone). Starting with version 3.0, Bootstrap adopted a mobile-first design philosophy,
+                    emphasizing responsive design by default. The version 4.0 alpha release added Sass and Flexbox support. Bootstrap is open source and available on GitHub. Developers are encouraged to participate in the project and make their own contributions
+                    to the platform.</p>
+                <hr>
+
+                <h4><small>RECENT POSTS</small></h4>
+                <hr>
+                <h2>Structure and function</h2>
+                <h5><span class="glyphicon glyphicon-time"></span>Post by Thitivut, Feb, 10 , 2017.</h5>
+                <h5><span class="label label-success">Detail from WIKI</span></h5><br>
+                <p>Bootstrap is modular and consists essentially of a series of Less stylesheets that implement the various components of the toolkit. A stylesheet called "Bootstrap less" includes the components stylesheets. Developers can adapt the Bootstrap
+                    file itself, selecting the components they wish to use in their projects. Adjustments are possible to a limited extent through a central configuration stylesheet. More profound changes are possible by the Less declarations.
+                    <h2>Stylesheets</h2>Bootstrap provides a set of stylesheets that provide basic style definitions for all key HTML components. These provide a uniform, modern appearance for formatting text, tables and form elements.
+                    <h2>Re-usable components</h2>In addition to the regular HTML elements, Bootstrap contains other commonly used interface elements. The components are implemented as CSS classes, which must be applied to certain HTML elements in a page.
+                    <h2>JavaScript components</h2>Bootstrap comes with several JavaScript components in the form of jQuery plugins. They provide additional user interface elements such as dialog boxes, tooltips, and carousels. They also extend the functionality
+                    of some existing interface elements, including for example an auto-complete function for input fields. In version 2.0, the following JavaScript plugins are supported: Modal, Dropdown, Scrollspy, Tab, Tooltip, Popover, Alert, Button,
+                    Collapse, Carousel and Typeahead.</p>
+                <hr>
+
+            </div>
+        </div>
     </div>
 
-    <div class="col-sm-9">
-      <h4><small>RECENT POSTS</small></h4>
-      <hr>
-      <h2>Bootstrap</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
-      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
-      <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><br>
-      
-      <h4><small>RECENT POSTS</small></h4>
-      <hr>
-      <h2>Officially Blogging</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
-      <h5><span class="label label-success">Lorem</span></h5><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr>
-
-      <h4>Leave a Comment:</h4>
-      <form role="form">
-        <div class="form-group">
-          <textarea class="form-control" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Submit</button>
-      </form>
-      <br><br>
-      
-      <p><span class="badge">2</span> Comments:</p><br>
-      
-      <div class="row">
-        <div class="col-sm-2 text-center">
-          <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
-          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <br>
-        </div>
-        <div class="col-sm-2 text-center">
-          <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
-          <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <br>
-          <p><span class="badge">1</span> Comment:</p><br>
-          <div class="row">
-            <div class="col-sm-2 text-center">
-              <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-            </div>
-            <div class="col-xs-10">
-              <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
-              <p>Me too! WOW!</p>
-              <br>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer class="container-fluid">
-  <p>Footer Text</p>
-</footer>
+    <footer class="container-fluid">
+        <p>Contact us Facebook : Thitivut Jiratrakulprom / 58160175</p>
+    </footer>
 
 </body>
+
 </html>
