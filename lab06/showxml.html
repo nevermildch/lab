@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function get_xml() {
+     var xmlhttp = new XMLHttpRequest;
+
+     xmlhttp.onreadystatechange = function() {
+      var i;
+      var obj = "";
+                
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        var o = xmlhttp.responseXML.documentElement.getElementsByTagName("book");
+               for (i = 0; i < o.length; i++) {
+                     obj += "<h2>" + o[i].getElementsByTagName("title")[0].firstChild.nodeValue + "</h2>";
+                     obj += o[i].getElementsByTagName("publisher")[0].firstChild.nodeValue + ", ";
+                     obj += o[i].getElementsByTagName("author")[0].firstChild.nodeValue + "<br><br>";
+                     obj += "<img src='" + o[i].getElementsByTagName("cover")[0].getAttribute("src") + " 'height='250'> <br><br>";
+                    }
+                    document.getElementById("mydiv").innerHTML = obj;
+                }
+            }
+            xmlhttp.open("GET", "http://angsila.cs.buu.ac.th/~wittawas/592/887371/labs/get_xml.php", true);
+            xmlhttp.send();
+
+}
+</script>
+</head>
+<body>
+<div id="mydiv">
+	Let AJAX change this 
+</div>
+<button type="button" onclick="get_xml()">
+	Change Content
+</button>
+</body>
+</html>

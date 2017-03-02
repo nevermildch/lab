@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+        function loadXMLDoc(xmlhttp, url, cfunc) {
+            xmlhttp.onreadystatechange = cfunc;
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+        }
+
+        function callLoad(url) {
+            var xmlhttp = new XMLHttpRequest();
+            loadXMLDoc(xmlhttp, url, function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+                    document.getElementById("mydiv").innerHTML += xmlhttp.responseText + "<br>";
+            });
+        }
+
+        function xmlFunction() {
+            document.getElementById("mydiv").innerHTML = "";
+            callLoad("http://angsila.cs.buu.ac.th/~wittawas/592/887371/labs/get_html.php");
+
+        }
+    </script>
+</head>
+<body>
+
+
+<div id="mydiv">
+	<h1>Show Html</h1>
+</div>
+<button type="button"  onclick= "xmlFunction()">
+	Change Content
+</button>
+</body>
+</html>
