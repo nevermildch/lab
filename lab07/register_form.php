@@ -105,4 +105,8 @@ $result = $conn->query($query);
     <button type="button"><a href="https://github.com/nevermildch/lab/blob/master/lab07/show_register.php">
 		INFORMATION TABLE 
 	</a></button>
+
+    <button type="button"><a href="https://github.com/nevermildch/lab/blob/master/lab07/er.png">
+		ER DIAGRAM 
+	</a></button>
    </html>
