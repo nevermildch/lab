@@ -88,4 +88,21 @@ $result = $conn->query($query);
       });
    </script>
    </body>
+   <br>
+   <br>
+   
+   <font face="THSarabunPSK" size=5 color=blue>Source Code</font>
+   <br>
+   <br>
+   <button type="button"><a href="https://github.com/nevermildch/lab/blob/master/lab07/register_form.php">
+		REGISTER FORM 
+	</a></button>
+
+    <button type="button"><a href="https://github.com/nevermildch/lab/blob/master/lab07/dopost.php">
+		DOPOST FORM
+	</a></button>
+
+    <button type="button"><a href="https://github.com/nevermildch/lab/blob/master/lab07/show_register.php">
+		INFORMATION TABLE 
+	</a></button>
    </html>

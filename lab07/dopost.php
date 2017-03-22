@@ -11,7 +11,9 @@ echo "<hr>";
 echo "<h3>View individual data:</h3>";
 echo $_POST['name']."<br />";
 echo $_POST['email']."<br />";
+echo $_POST['sex']."<br />";
 echo $_POST['address']."<br />";
+
 
 
 $name = $_POST['name'];
