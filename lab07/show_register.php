@@ -25,7 +25,7 @@ $result = $conn->query($query);
 
 <tr>
 <td align=center bgcolor="#FF69B4">#</td>
-<td align=center bgcolor="#FF69B4">ชื่อ</td>
+<td align=center bgcolor="#FF69B4">ชื่อ-นามสกุล</td>
 <td align=center bgcolor="#FF69B4">อีเมล</td>
 <td align=center bgcolor="#FF69B4">เพศ</td>
 <td align=center bgcolor="#FF69B4">ความสนใจ</td>
@@ -50,6 +50,7 @@ $result->close();
     <center><button type="button"><a href="http://angsila.cs.buu.ac.th/~58160175/887371/lab07/register_form.php">
 		Register
 	</a></button>
+    </center
     
 </body>
 </html>
